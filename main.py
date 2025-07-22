@@ -9,4 +9,10 @@ def suma(n):
         return 0
     else:
         return n+suma(n-1)
-print(suma(4))
+
+def fibonacci(n):
+    if n==0:
+        return 0
+    else:
+        return n+fibonacci(n-1)
+print(fibonacci(10))
