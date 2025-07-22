@@ -23,6 +23,16 @@ def letraypalabras(palabra, letra):
             return 1 + letraypalabras(palabra[:-1], letra)
         else:
             return letraypalabras(palabra[:-1], letra)
+def invertir_cadena(cadena):
+    if len(cadena) == 0:
+        return ""
+    else:
+        return cadena[-1] + invertir_cadena(cadena[:-1])
+def potencia(base, exponente):
+    if exponente == 0:
+        return 1
+    else:
+        return base * potencia(base, exponente - 1)
 
 
 
