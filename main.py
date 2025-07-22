@@ -16,3 +16,11 @@ def fibonacci(n):
     else:
         return n+fibonacci(n-1)
 print(fibonacci(10))
+def letraypalabras(palabra,letra):
+    if len(palabra)==0:
+        return 0
+    else:
+        if palabra[-1]==letra:
+            return 1
+
+
