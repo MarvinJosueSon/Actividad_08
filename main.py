@@ -15,12 +15,14 @@ def fibonacci(n):
         return 0
     else:
         return n+fibonacci(n-1)
-print(fibonacci(10))
-def letraypalabras(palabra,letra):
-    if len(palabra)==0:
+def letraypalabras(palabra, letra):
+    if len(palabra) == 0:
         return 0
     else:
-        if palabra[-1]==letra:
-            return 1
+        if palabra[-1] == letra:
+            return 1 + letraypalabras(palabra[:-1], letra)
+        else:
+            return letraypalabras(palabra[:-1], letra)
+
 
 
